@@ -1,0 +1,67 @@
+section {
+    padding: 0 50px;
+}
+section:first-child {
+    display: flex;
+    padding: 50px;
+    flex-direction: row;
+}
+section:first-child>div:first-child {
+    width: 350px;
+}
+
+.mine>svg {
+    fill: rgba(0,0,0,0);
+    stroke: rgba(102,102,102,1);
+}
+.mine>svg>g:first-child>circle:nth-child(3) {
+    stroke: rgba(255,255,255,1);
+}
+.mine>svg>g>text {
+    stroke: none;
+    font-family: "Inconsolatab";
+    font-size: 15px;
+}
+.mine>svg>g:last-child>text {
+    stroke: none;
+    font-family: "Inconsolataeb";
+    font-size: 30px;
+}
+.exp>div:first-child {
+    padding: 0 0 10px 0;
+    font-family: "Inconsolataeb";
+    font-size: 30px;
+}
+.exp>div>svg {
+    height: 10px;
+    padding: 0 0 10px 0;
+}
+.exp>div>span {
+    display: block;
+    font-family: "Inconsolatab";
+    line-height: 25px;
+}
+.exp>div>span>i {
+    color: rgba(102,102,102,1);
+}
+.exp>div>span>a {
+    color: rgba(255,255,255,1);
+}
+.exp>div>span>a:hover {
+    text-decoration: underline;
+}
+.grd-txt {
+    width: 100%;
+}
+.grd-txt>div {
+    margin: auto;
+    width: 235px;
+}
+.grd-txt>div>svg>text {
+    font-family: "Inconsolatael";
+    font-size: 47px;
+}
+.grd-txt>div>svg>text>tspan {
+    font-family: "Inconsolataeb";
+    font-size: 30px;
+}
