@@ -36,13 +36,34 @@
             padding-bottom: 20px;
         }
         
+        .profile-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 25px;
+        }
+
         .profile-img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
             border: 4px solid #2563eb;
-            margin-right: 25px;
+            margin-right: 0;
+        }
+
+        .birth-date {
+            margin-top: 8px;
+            font-size: 11px;
+            color: #64748b;
+            text-align: center;
+        }
+        .birth-date svg {
+            width: 14px;
+            height: 14px;
+            vertical-align: -2px;
+            margin-right: 6px;
+            fill: #2563eb;
         }
         
         .header-info {
@@ -539,7 +560,15 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHt8uDrQks9pg/profile-displayphoto-shrink_800_800/B4DZWTnI7MHkAc-/0/1741938268535?e=1757548800&v=beta&t=qjwFbe1291i1R78UkfM5tUlBHxBVfaW8WBIlz03ADM8" alt="Youssef Hassan Ali" class="profile-img">
+            <div class="profile-block">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHt8uDrQks9pg/profile-displayphoto-shrink_800_800/B4DZWTnI7MHkAc-/0/1741938268535?e=1757548800&v=beta&t=qjwFbe1291i1R78UkfM5tUlBHxBVfaW8WBIlz03ADM8" alt="Youssef Hassan Ali" class="profile-img">
+                <div class="birth-date">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V3a1 1 0 0 1 1-1zm12 7H5v10h14V9zM7 11h4v4H7v-4z"/>
+                    </svg>
+                    9 May 2002
+                </div>
+            </div>
             <div class="header-info">
                 <h1 class="name">Youssef Hassan Ali</h1>
                 <p class="title">Software Developer</p>

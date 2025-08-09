@@ -9,6 +9,7 @@
 
 <img src="https://media.licdn.com/dms/image/v2/D4D03AQHt8uDrQks9pg/profile-displayphoto-shrink_800_800/B4DZWTnI7MHkAc-/0/1741938268535?e=1757548800&v=beta&t=qjwFbe1291i1R78UkfM5tUlBHxBVfaW8WBIlz03ADM8" alt="John Doe" width="200" style="border-radius: 50%; float: right; margin-left: 20px;"/>
 
+**Birth day:** 9 may 2002
 **Email:** youssef.hassan.0202@gmail.com
 **Phone:** +20 155 672 5510
 **Location:** 6th October, Giza, Egypt
