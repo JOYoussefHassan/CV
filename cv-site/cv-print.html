@@ -101,6 +101,18 @@
             color: #2563eb;
             text-decoration: none;
         }
+        /* Render email/phone links like normal text */
+        .contact-item a[href^="mailto:"],
+        .contact-item a[href^="tel:"] {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 400;
+        }
+        .contact-item a[href^="mailto:"]:hover,
+        .contact-item a[href^="tel:"]:hover {
+            text-decoration: underline;
+            color: inherit;
+        }
         
         .section {
             margin-bottom: 25px;
@@ -574,10 +586,10 @@
                 <p class="title">Software Developer</p>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <strong>Email:</strong> youssef.hassan.0202@gmail.com
+                        <strong>Email:</strong> <a href="mailto:youssef.hassan.0202@gmail.com">youssef.hassan.0202@gmail.com</a>
                     </div>
                     <div class="contact-item">
-                        <strong>Phone:</strong> +20 155 672 5510
+                        <strong>Phone:</strong> <a href="tel:+201556725510">+20 155 672 5510</a>
                     </div>
                     <div class="contact-item">
                         <strong>Location:</strong> 6th October, Giza, Egypt
@@ -957,10 +969,10 @@
 
                 <div class="project-item">
                     <div class="project-header">
-                        <h3 class="project-name">Moqtatafat - beta</h3>
+                        <h3 class="project-name">Moqtatafat</h3>
                         <span class="project-status status-development">Development</span>
                     </div>
-                    <p class="project-description">Beta version as static page from MMQ2u</p>
+                    <p class="project-description">This is website for Islamic advices and encourage young people to do somthing good</p>
                     <p class="project-tech"><strong>Technologies:</strong> HTML/CSS/JS, Django</p>
                     <div class="project-stats">
                         <span><strong>GitHub:</strong> <a href="https://github.com/Moqtatafat/django">Moqtatafat</a></span>

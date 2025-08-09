@@ -149,12 +149,12 @@ Beta version as static page from MMQ2u
 **Technologies:** HTML/CSS/JS
 **User Satisfaction:** 90% | **Performance Score:** 98/100
 
-### Moqtatafat - beta
+### Moqtatafat
 **GitHub:** [Moqtatafat](https://github.com/Moqtatafat/django) 
 **Live Demo:** -
 **Status:** Development | **Users:** - | **Duration:** 1 month | **Completion:** 70%
 
-Beta version as static page from MMQ2u
+This is website for Islamic advices and encourage young people to do somthing good
 
 **Technologies:** HTML/CSS/JS, Django
 **User Satisfaction:** - | **Performance Score:** 80/100
