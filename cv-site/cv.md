@@ -7,7 +7,7 @@
 
 ---
 
-<img src="https://media.licdn.com/dms/image/v2/D4D03AQHt8uDrQks9pg/profile-displayphoto-shrink_800_800/B4DZWTnI7MHkAc-/0/1741938268535?e=1757548800&v=beta&t=qjwFbe1291i1R78UkfM5tUlBHxBVfaW8WBIlz03ADM8" alt="John Doe" width="200" style="border-radius: 50%; float: right; margin-left: 20px;"/>
+<img src="https://media.licdn.com/dms/image/v2/D4D03AQHt8uDrQks9pg/profile-displayphoto-shrink_400_400/B4DZWTnI7MHkAg-/0/1741938268535?e=1760572800&v=beta&t=NR67lY1gDq2V6D7qyfqFHmmOmE_hDlbdHkafLjtJL3I" alt="John Doe" width="200" style="border-radius: 50%; float: right; margin-left: 20px;"/>
 
 **Birth day:** 9 may 2002
 **Email:** youssef.hassan.0202@gmail.com
@@ -62,19 +62,21 @@ I currently working on Vconnect company as a backend developer to enhance some f
 - **Docker** - 80% (1- year)
 - **CI/CD** - 70% (1- year)
 
+### Special technologies
+- **LiveKit** - 75% (1- year)
+- **PartyKit** - 75% (1- year)
+
 ---
 
 ## Work Experience
 
 ### Intern. Backend developer
-**Vconnect** | *6th October, Giza, Egypt* | *Aug 2025 - Present* | **- years**
+**Vconnect** | *6th October, Giza, Egypt* | *Jul 2025 - Present* | **2 months**
 
-- Enhance payment services by refactoring the source code
-- Add Redis to project to cache data for reducing load on database
-- Enhance connectivity when using API
-- Use FastAPI with asynchronous functions
+- Enhance payment services (FastAPI, PostgreSQL, Redis)
+- Create livestream service in Vconnect tool (NodeJS, MongoDB, LiveKit)
 
-**Team Size:** 8 developers | **Projects Delivered:** 1 | **Experience Level:** Jonior (95%)
+**Team Size:** 12 developers | **Projects Delivered:** 2 | **Experience Level:** Jonior (95%)
 
 ### Full-stack developer
 **MMQ2u** | *Remote* | *Jul 2019 - Aug 2021* | **2.1 years**
