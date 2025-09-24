@@ -72,7 +72,7 @@ I currently working on Vconnect company as a backend developer to enhance some f
 ## Work Experience
 
 ### Backend developer
-**Hykerz** | *Remote, Egypt* | *Jul 2025 - Sep 2025* | **3 months**
+**Hykerz** | *Remote part-time, Egypt* | *Jul 2025 - Sep 2025* | **3 months**
 
 - Develop and maintain application in iOS and android (Flutter, Firebase)
 
