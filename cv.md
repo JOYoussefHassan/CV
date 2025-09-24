@@ -52,6 +52,7 @@ I currently working on Vconnect company as a backend developer to enhance some f
 - **RESTful APIs** - 95% (1- year)
 - **JWT** - 95% (1- year)
 - **Django** - 80% (1+ year)
+- **Firebase** - 70% (1- year)
 
 ### Databases
 - **PostgreSQL** - 80% (3+ years)
@@ -70,8 +71,15 @@ I currently working on Vconnect company as a backend developer to enhance some f
 
 ## Work Experience
 
+### Backend developer
+**Hykerz** | *Remote, Egypt* | *Jul 2025 - Sep 2025* | **3 months**
+
+- Develop and maintain application in iOS and android (Flutter, Firebase)
+
+**Team Size:** 3 developers | **Projects Delivered:** 1 | **Experience Level:** Junior (100%)
+
 ### Intern. Backend developer
-**Vconnect** | *6th October, Giza, Egypt* | *Jul 2025 - Present* | **2 months**
+**Vconnect** | *6th October, Giza, Egypt* | *Jul 2025 - Sep 2025* | **3 months**
 
 - Enhance payment services (FastAPI, PostgreSQL, Redis)
 - Create livestream service in Vconnect tool (NodeJS, MongoDB, LiveKit)
