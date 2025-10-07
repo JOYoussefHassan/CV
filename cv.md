@@ -151,9 +151,9 @@ Full-stack application for multiple OS using Flutter, NodeJS, and SQLite to show
 **Technologies:** Flutter, NodeJS, SQLite, RESTful API, JWT
 **User Satisfaction:** 85% | **Performance Score:** 92/100
 
-### MMQ2u
+### MMQ4u
 
-**Github:** [github/MMQ2u](https://github.com/MMQ4u/Django)  
+**Github:** [github/MMQ4u](https://github.com/MMQ4u/Django)  
 **Live Demo:** -
 **Status:** Development | **Users:** - | **Duration:** 2 months | **Completion:** 70%
 
@@ -162,13 +162,13 @@ Access data from google drive. Secondary degree convertor to show available facu
 **Technologies:** HTML/CSS/ES, Django, SQLite, Express  
 **User Satisfaction:** - | **Performance Score:** 98/100
 
-### MMQ2u - beta
+### MMQ4u - beta
 
-**GitHub:** [MMQ2u](https://github.com/MMQ4u/MMQ4u.github.io)
-**Live Demo:** -
+**GitHub:** [MMQ4u](https://github.com/MMQ4u/MMQ4u.github.io)
+**Live Demo:** [MMQ4u](https://mmq4u.github.io/)
 **Status:** Production | **Users:** +7k | **Duration:** 3 months | **Completion:** 100%
 
-Beta version as static page from MMQ2u
+Beta version as static page from MMQ4u
 
 **Technologies:** HTML/CSS/JS
 **User Satisfaction:** 90% | **Performance Score:** 98/100
