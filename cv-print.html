@@ -1,1041 +1,1148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youssef Hassan Ali - CV</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #fff;
-            font-size: 12px;
-        }
-        
-        .container {
-            max-width: 210mm;
-            margin: 0 auto;
-            padding: 20px;
-            background: white;
-        }
-        
-        .header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-            border-bottom: 3px solid #2563eb;
-            padding-bottom: 20px;
-        }
-        
-        .profile-block {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-right: 25px;
-        }
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #2563eb;
-            margin-right: 0;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        .birth-date {
-            margin-top: 8px;
-            font-size: 11px;
-            color: #64748b;
-            text-align: center;
-        }
-        .birth-date svg {
-            width: 14px;
-            height: 14px;
-            vertical-align: -2px;
-            margin-right: 6px;
-            fill: #2563eb;
-        }
-        
-        .header-info {
-            flex: 1;
-        }
-        
-        .name {
-            font-size: 28px;
-            font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 5px;
-        }
-        
-        .title {
-            font-size: 18px;
-            color: #2563eb;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .contact-info {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-            font-size: 11px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .contact-item a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-        /* Render email/phone links like normal text */
-        .contact-item a[href^="mailto:"],
-        .contact-item a[href^="tel:"] {
-            color: inherit;
-            text-decoration: none;
-            font-weight: 400;
-        }
-        .contact-item a[href^="mailto:"]:hover,
-        .contact-item a[href^="tel:"]:hover {
-            text-decoration: underline;
-            color: inherit;
-        }
-        
-        .section {
-            margin-bottom: 25px;
-        }
-        
-        .section-title {
-            font-size: 16px;
-            font-weight: 700;
-            color: #1e293b;
-            border-bottom: 2px solid #e2e8f0;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-        
-        .summary {
-            font-size: 12px;
-            line-height: 1.6;
-            color: #475569;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        
-        .skill-category {
-            margin-bottom: 15px;
-        }
-        
-        .skill-category h4 {
-            font-size: 13px;
-            font-weight: 600;
-            color: #1e293b;
-            margin-bottom: 8px;
-        }
-        
-        .skill-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 8px;
-            font-size: 11px;
-            gap: 10px;
-        }
-        
-        .skill-info {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            min-width: 0;
-            flex: 1;
-        }
-        
-        .skill-name {
-            font-weight: 500;
-            white-space: nowrap;
-        }
-        
-        .skill-level {
-            color: #64748b;
-            font-size: 10px;
-            white-space: nowrap;
-        }
-        
-        .skill-progress {
-            width: 120px;
-            height: 6px;
-            background-color: #e2e8f0;
-            border-radius: 3px;
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-        
-        .skill-progress-bar {
-            height: 100%;
-            background: linear-gradient(90deg, #2563eb, #3b82f6);
-            border-radius: 3px;
-            transition: width 0.3s ease;
-        }
-        
-        .experience-item {
-            margin-bottom: 20px;
-            page-break-inside: avoid;
-        }
-        
-        .section {
-            margin-bottom: 25px;
-            page-break-inside: avoid;
-        }
-        
-        .skill-category {
-            margin-bottom: 15px;
-            page-break-inside: avoid;
-        }
-        
-        .project-item {
-            border-left: 3px solid #2563eb;
-            padding-left: 15px;
-            margin-bottom: 15px;
-            page-break-inside: avoid;
-        }
-        
-        .education-item {
-            margin-bottom: 15px;
-            page-break-inside: avoid;
-        }
-        
-        .header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-            border-bottom: 3px solid #2563eb;
-            padding-bottom: 20px;
-            page-break-inside: avoid;
-        }
-        
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 8px;
-        }
-        
-        .job-title {
-            font-size: 14px;
-            font-weight: 600;
-            color: #1e293b;
-        }
-        
-        .job-company {
-            font-size: 13px;
-            color: #2563eb;
-            font-weight: 500;
-        }
-        
-        .job-duration {
-            font-size: 11px;
-            color: #64748b;
-            text-align: right;
-        }
-        
-        .job-location {
-            font-size: 11px;
-            color: #64748b;
-        }
-        
-        .job-description {
-            font-size: 11px;
-            color: #475569;
-            line-height: 1.5;
-        }
-        
-        .job-stats {
-            display: flex;
-            gap: 15px;
-            margin-top: 8px;
-            font-size: 10px;
-            color: #64748b;
-        }
-        
-        .education-item {
-            margin-bottom: 15px;
-        }
-        
-        .education-degree {
-            font-size: 13px;
-            font-weight: 600;
-            color: #1e293b;
-        }
-        
-        .education-school {
-            font-size: 12px;
-            color: #2563eb;
-            margin-bottom: 5px;
-        }
-        
-        .education-details {
-            font-size: 11px;
-            color: #64748b;
-        }
-        
-        .projects-grid {
-            display: grid;
-            gap: 15px;
-        }
-        
-        .project-item {
-            border-left: 3px solid #2563eb;
-            padding-left: 15px;
-            margin-bottom: 15px;
-        }
-        
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 8px;
-        }
-        
-        .project-name {
-            font-size: 13px;
-            font-weight: 600;
-            color: #1e293b;
-        }
-        
-        .project-status {
-            font-size: 10px;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-weight: 500;
-        }
-        
-        .status-production {
-            background: #dcfce7;
-            color: #166534;
-        }
-        
-        .status-development {
-            background: #fef3c7;
-            color: #92400e;
-        }
-        
-        .project-description {
-            font-size: 11px;
-            color: #475569;
-            margin-bottom: 8px;
-        }
-        
-        .project-tech {
-            font-size: 10px;
-            color: #64748b;
-            margin-bottom: 5px;
-        }
-        
-        .project-stats {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            font-size: 10px;
-            color: #64748b;
-        }
-        
-        .project-stats span {
-            display: flex;
-            flex-direction: column;
-            min-width: 120px;
-        }
-        
-        .project-stats strong {
-            margin-bottom: 2px;
-        }
-        
-        .certifications {
-            font-size: 11px;
-            color: #475569;
-        }
-        
-        .certification-item {
-            margin-bottom: 5px;
-        }
-        
-        .languages {
-            font-size: 11px;
-            color: #475569;
-        }
-        
-        .language-item {
-            margin-bottom: 5px;
-        }
-        
-        .interests {
-            font-size: 11px;
-            color: #475569;
-        }
-        
-        .interest-item {
-            margin-bottom: 5px;
-        }
-        
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #fff;
+        font-size: 12px;
+      }
+
+      .container {
+        max-width: 210mm;
+        margin: 0 auto;
+        padding: 20px;
+        background: white;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #2563eb;
+        padding-bottom: 20px;
+      }
+
+      .profile-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 25px;
+      }
+
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #2563eb;
+        margin-right: 0;
+      }
+
+      .birth-date {
+        margin-top: 8px;
+        font-size: 11px;
+        color: #64748b;
+        text-align: center;
+      }
+      .birth-date svg {
+        width: 14px;
+        height: 14px;
+        vertical-align: -2px;
+        margin-right: 6px;
+        fill: #2563eb;
+      }
+
+      .header-info {
+        flex: 1;
+      }
+
+      .name {
+        font-size: 28px;
+        font-weight: 700;
+        color: #1e293b;
+        margin-bottom: 5px;
+      }
+
+      .title {
+        font-size: 18px;
+        color: #2563eb;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .contact-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        font-size: 11px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .contact-item a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+      /* Render email/phone links like normal text */
+      .contact-item a[href^="mailto:"],
+      .contact-item a[href^="tel:"] {
+        color: inherit;
+        text-decoration: none;
+        font-weight: 400;
+      }
+      .contact-item a[href^="mailto:"]:hover,
+      .contact-item a[href^="tel:"]:hover {
+        text-decoration: underline;
+        color: inherit;
+      }
+
+      .section {
+        margin-bottom: 25px;
+      }
+
+      .section-title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #1e293b;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+
+      .summary {
+        font-size: 12px;
+        line-height: 1.6;
+        color: #475569;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      .skill-category {
+        margin-bottom: 15px;
+      }
+
+      .skill-category h4 {
+        font-size: 13px;
+        font-weight: 600;
+        color: #1e293b;
+        margin-bottom: 8px;
+      }
+
+      .skill-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        font-size: 11px;
+        gap: 10px;
+      }
+
+      .skill-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
+        flex: 1;
+      }
+
+      .skill-name {
+        font-weight: 500;
+        white-space: nowrap;
+      }
+
+      .skill-level {
+        color: #64748b;
+        font-size: 10px;
+        white-space: nowrap;
+      }
+
+      .skill-progress {
+        width: 120px;
+        height: 6px;
+        background-color: #e2e8f0;
+        border-radius: 3px;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+
+      .skill-progress-bar {
+        height: 100%;
+        background: linear-gradient(90deg, #2563eb, #3b82f6);
+        border-radius: 3px;
+        transition: width 0.3s ease;
+      }
+
+      .experience-item {
+        margin-bottom: 20px;
+        page-break-inside: avoid;
+      }
+
+      .section {
+        margin-bottom: 25px;
+        page-break-inside: avoid;
+      }
+
+      .skill-category {
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+      }
+
+      .project-item {
+        border-left: 3px solid #2563eb;
+        padding-left: 15px;
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+      }
+
+      .education-item {
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #2563eb;
+        padding-bottom: 20px;
+        page-break-inside: avoid;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 8px;
+      }
+
+      .job-title {
+        font-size: 14px;
+        font-weight: 600;
+        color: #1e293b;
+      }
+
+      .job-company {
+        font-size: 13px;
+        color: #2563eb;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      .job-duration {
+        font-size: 11px;
+        color: #64748b;
+        text-align: right;
+      }
+
+      .job-location {
+        font-size: 11px;
+        color: #64748b;
+      }
+
+      .job-description {
+        font-size: 11px;
+        color: #475569;
+        line-height: 1.5;
+      }
+
+      .job-stats {
+        display: flex;
+        gap: 15px;
+        margin-top: 8px;
+        font-size: 10px;
+        color: #64748b;
+      }
+
+      .education-item {
+        margin-bottom: 15px;
+      }
+
+      .education-degree {
+        font-size: 13px;
+        font-weight: 600;
+        color: #1e293b;
+      }
+
+      .education-school {
+        font-size: 12px;
+        color: #2563eb;
+        margin-bottom: 5px;
+      }
+
+      .education-details {
+        font-size: 11px;
+        color: #64748b;
+      }
+
+      .projects-grid {
+        display: grid;
+        gap: 15px;
+      }
+
+      .project-item {
+        border-left: 3px solid #2563eb;
+        padding-left: 15px;
+        margin-bottom: 15px;
+      }
+
+      .project-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 8px;
+      }
+
+      .project-name {
+        font-size: 13px;
+        font-weight: 600;
+        color: #1e293b;
+      }
+
+      .project-status {
+        font-size: 10px;
+        padding: 2px 8px;
+        border-radius: 12px;
+        font-weight: 500;
+      }
+
+      .status-production {
+        background: #dcfce7;
+        color: #166534;
+      }
+
+      .status-development {
+        background: #fef3c7;
+        color: #92400e;
+      }
+
+      .project-description {
+        font-size: 11px;
+        color: #475569;
+        margin-bottom: 8px;
+      }
+
+      .project-tech {
+        font-size: 10px;
+        color: #64748b;
+        margin-bottom: 5px;
+      }
+
+      .project-stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 10px;
+        color: #64748b;
+      }
+
+      .project-stats span {
+        display: flex;
+        flex-direction: column;
+        min-width: 120px;
+      }
+
+      .project-stats strong {
+        margin-bottom: 2px;
+      }
+
+      .certifications {
+        font-size: 11px;
+        color: #475569;
+      }
+
+      .certification-item {
+        margin-bottom: 5px;
+      }
+
+      .languages {
+        font-size: 11px;
+        color: #475569;
+      }
+
+      .language-item {
+        margin-bottom: 5px;
+      }
+
+      .interests {
+        font-size: 11px;
+        color: #475569;
+      }
+
+      .interest-item {
+        margin-bottom: 5px;
+      }
+
+      .print-instructions {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #2563eb;
+        color: white;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 14px;
+        max-width: 300px;
+        z-index: 1000;
+      }
+
+      .print-instructions h3 {
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+
+      .print-instructions ul {
+        margin-left: 20px;
+      }
+
+      .print-instructions li {
+        margin-bottom: 5px;
+      }
+
+      @media print {
         .print-instructions {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #2563eb;
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
-            font-size: 14px;
-            max-width: 300px;
-            z-index: 1000;
+          display: none;
         }
-        
-        .print-instructions h3 {
-            margin-bottom: 10px;
-            font-size: 16px;
+
+        body {
+          font-size: 11px;
         }
-        
-        .print-instructions ul {
-            margin-left: 20px;
+
+        .container {
+          padding: 15px;
         }
-        
-        .print-instructions li {
-            margin-bottom: 5px;
+
+        .header {
+          margin-bottom: 20px;
         }
-        
-        @media print {
-            .print-instructions {
-                display: none;
-            }
-            
-            body {
-                font-size: 11px;
-            }
-            
-            .container {
-                padding: 15px;
-            }
-            
-            .header {
-                margin-bottom: 20px;
-            }
-            
-            .section {
-                margin-bottom: 20px;
-            }
-            
-            /* Enhanced page break controls for print */
-            .section-title {
-                page-break-after: avoid;
-                break-after: avoid;
-            }
-            
-            .skills-grid {
-                page-break-inside: avoid;
-                break-inside: avoid;
-            }
-            
-            .projects-grid {
-                page-break-inside: avoid;
-                break-inside: avoid;
-            }
-            
-            /* Ensure minimum space before page breaks */
-            .section:before {
-                content: "";
-                display: block;
-                height: 0;
-                page-break-before: auto;
-            }
-            
-            /* Prevent orphaned content */
-            .job-description li,
-            .project-description,
-            .education-details {
-                page-break-inside: avoid;
-                break-inside: avoid;
-            }
-            
-            /* Ensure progress bars are visible in print */
-            .skills-grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 20px;
-            }
-            
-            .skill-category {
-                margin-bottom: 15px;
-            }
-            
-            .skill-category h4 {
-                font-size: 13px;
-                font-weight: 600;
-                color: #1e293b;
-                margin-bottom: 8px;
-            }
-            
-            .skill-item {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-bottom: 8px;
-                font-size: 11px;
-                gap: 10px;
-            }
-            
-            .skill-info {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                min-width: 0;
-                flex: 1;
-            }
-            
-            .skill-name {
-                font-weight: 500;
-                white-space: nowrap;
-            }
-            
-            .skill-level {
-                color: #64748b;
-                font-size: 10px;
-                white-space: nowrap;
-            }
-            
-            .skill-progress {
-                width: 120px;
-                height: 6px;
-                background-color: #e2e8f0;
-                border-radius: 3px;
-                overflow: hidden;
-                flex-shrink: 0;
-            }
-            
-            .skill-progress-bar {
-                height: 100%;
-                background: linear-gradient(90deg, #2563eb, #3b82f6);
-                border-radius: 3px;
-                transition: width 0.3s ease;
-            }
-            
-            /* Force background colors to print */
-            * {
-                -webkit-print-color-adjust: exact !important;
-                color-adjust: exact !important;
-            }
+
+        .section {
+          margin-bottom: 20px;
         }
-        
-        @media screen and (max-width: 768px) {
-            .print-instructions {
-                position: static;
-                margin-bottom: 20px;
-                max-width: none;
-            }
-            
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .contact-info {
-                grid-template-columns: 1fr;
-            }
+
+        /* Enhanced page break controls for print */
+        .section-title {
+          page-break-after: avoid;
+          break-after: avoid;
         }
+
+        .skills-grid {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        .projects-grid {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        /* Ensure minimum space before page breaks */
+        .section:before {
+          content: "";
+          display: block;
+          height: 0;
+          page-break-before: auto;
+        }
+
+        /* Prevent orphaned content */
+        .job-description li,
+        .project-description,
+        .education-details {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        /* Ensure progress bars are visible in print */
+        .skills-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+        }
+
+        .skill-category {
+          margin-bottom: 15px;
+        }
+
+        .skill-category h4 {
+          font-size: 13px;
+          font-weight: 600;
+          color: #1e293b;
+          margin-bottom: 8px;
+        }
+
+        .skill-item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 8px;
+          font-size: 11px;
+          gap: 10px;
+        }
+
+        .skill-info {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          min-width: 0;
+          flex: 1;
+        }
+
+        .skill-name {
+          font-weight: 500;
+          white-space: nowrap;
+        }
+
+        .skill-level {
+          color: #64748b;
+          font-size: 10px;
+          white-space: nowrap;
+        }
+
+        .skill-progress {
+          width: 120px;
+          height: 6px;
+          background-color: #e2e8f0;
+          border-radius: 3px;
+          overflow: hidden;
+          flex-shrink: 0;
+        }
+
+        .skill-progress-bar {
+          height: 100%;
+          background: linear-gradient(90deg, #2563eb, #3b82f6);
+          border-radius: 3px;
+          transition: width 0.3s ease;
+        }
+
+        /* Force background colors to print */
+        * {
+          -webkit-print-color-adjust: exact !important;
+          color-adjust: exact !important;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .print-instructions {
+          position: static;
+          margin-bottom: 20px;
+          max-width: none;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-info {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="print-instructions">
-        <h3>📄 How to Save as PDF</h3>
-        <ul>
-            <li><strong>Chrome/Edge:</strong> Ctrl+P → Save as PDF</li>
-            <li><strong>Firefox:</strong> Ctrl+P → Save to File</li>
-            <li><strong>Safari:</strong> Cmd+P → Save as PDF</li>
-        </ul>
-        <p><strong>Tip:</strong> Make sure "Background graphics" is enabled in print settings for best results.</p>
+      <h3>📄 How to Save as PDF</h3>
+      <ul>
+        <li><strong>Chrome/Edge:</strong> Ctrl+P → Save as PDF</li>
+        <li><strong>Firefox:</strong> Ctrl+P → Save to File</li>
+        <li><strong>Safari:</strong> Cmd+P → Save as PDF</li>
+      </ul>
+      <p>
+        <strong>Tip:</strong> Make sure "Background graphics" is enabled in
+        print settings for best results.
+      </p>
     </div>
 
     <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <div class="profile-block">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHt8uDrQks9pg/profile-displayphoto-shrink_400_400/B4DZWTnI7MHkAg-/0/1741938268535?e=1760572800&v=beta&t=NR67lY1gDq2V6D7qyfqFHmmOmE_hDlbdHkafLjtJL3I" alt="Youssef Hassan Ali" class="profile-img">
-                <div class="birth-date">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V3a1 1 0 0 1 1-1zm12 7H5v10h14V9zM7 11h4v4H7v-4z"/>
-                    </svg>
-                    9 May 2002
-                </div>
+      <!-- Header -->
+      <div class="header">
+        <div class="profile-block">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D4D03AQHt8uDrQks9pg/profile-displayphoto-shrink_400_400/B4DZWTnI7MHkAg-/0/1741938268535?e=1760572800&v=beta&t=NR67lY1gDq2V6D7qyfqFHmmOmE_hDlbdHkafLjtJL3I"
+            alt="Youssef Hassan Ali"
+            class="profile-img"
+          />
+          <div class="birth-date">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1V3a1 1 0 0 1 1-1zm12 7H5v10h14V9zM7 11h4v4H7v-4z"
+              />
+            </svg>
+            9 May 2002
+          </div>
+        </div>
+        <div class="header-info">
+          <h1 class="name">Youssef Hassan Ali</h1>
+          <p class="title">Software Developer</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <strong>Email:</strong>
+              <a href="mailto:youssef.hassan.0202@gmail.com"
+                >youssef.hassan.0202@gmail.com</a
+              >
             </div>
-            <div class="header-info">
-                <h1 class="name">Youssef Hassan Ali</h1>
-                <p class="title">Software Developer</p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>Email:</strong> <a href="mailto:youssef.hassan.0202@gmail.com">youssef.hassan.0202@gmail.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Phone:</strong> <a href="tel:+201556725510">+20 155 672 5510</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Location:</strong> 6th October, Giza, Egypt
-                    </div>
-                    <div class="contact-item">
-                        <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/joyoussefhassan">linkedin.com/in/joyoussefhassan</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>GitHub:</strong> <a href="https://github.com/JOYoussefHassan">github.com/JOYoussefHassan</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>Portfolio:</strong> <a href="https://joyoussefhassan.github.io/JOYoussefHassan">JOYoussefHassan</a>
-                    </div>
-                </div>
+            <div class="contact-item">
+              <strong>Phone:</strong>
+              <a href="tel:+201556725510">+20 155 672 5510</a>
             </div>
+            <div class="contact-item">
+              <strong>Location:</strong> Gharbeyah, Zeitoun, Cairo
+            </div>
+            <div class="contact-item">
+              <strong>LinkedIn:</strong>
+              <a href="https://linkedin.com/in/joyoussefhassan"
+                >linkedin.com/in/joyoussefhassan</a
+              >
+            </div>
+            <div class="contact-item">
+              <strong>GitHub:</strong>
+              <a href="https://github.com/JOYoussefHassan"
+                >github.com/JOYoussefHassan</a
+              >
+            </div>
+            <div class="contact-item">
+              <strong>Portfolio:</strong>
+              <a href="https://joyoussefhassan.github.io/JOYoussefHassan"
+                >JOYoussefHassan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Summary -->
+      <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary">
+          I currently work as a full-stack developer. I created many projects
+          using cross platforms in front-end field. Also, many projects in
+          backend using python and nodejs. I'm hiring to work as a software
+          developer.
+        </p>
+      </div>
+
+      <!-- Interests -->
+      <div class="section">
+        <h2 class="section-title">Interests</h2>
+        <div class="interests">
+          <div class="interest-item">
+            • Link between Programming and Pharmacy
+          </div>
+          <div class="interest-item">
+            • Use Vibe coding to develop applications
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Programming Languages</h4>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-level">95% (3+ years)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-level">80% (1+ years)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level">80% (5+ years)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Php</span>
+                <span class="skill-level">50% (2+ years)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Dart</span>
+                <span class="skill-level">85% (1- year)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Backend & APIs</h4>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-level">90% (1- year)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Express</span>
+                <span class="skill-level">80% (1- year)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">RESTful APIs</span>
+                <span class="skill-level">95% (1- year)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">JWT</span>
+                <span class="skill-level">95% (1- year)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Django</span>
+                <span class="skill-level">80% (1+ year)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Firebase</span>
+                <span class="skill-level">70% (1- year)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Frontend Technologies</h4>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">HTML5/CSS3/ES</span>
+                <span class="skill-level">80% (2+ years)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Flutter</span>
+                <span class="skill-level">75% (1- year)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Databases</h4>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">PostgreSQL</span>
+                <span class="skill-level">80% (3+ years)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Redis</span>
+                <span class="skill-level">40% (1- years)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 40%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-level">70% (2+ years)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h4>Cloud & DevOps</h4>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Docker</span>
+                <span class="skill-level">80% (1- years)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">CI/CD</span>
+                <span class="skill-level">70% (1- years)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Special technologies</h4>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">LiveKit</span>
+                <span class="skill-level">75% (1- year)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">PartyKit</span>
+                <span class="skill-level">75% (1- year)</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-progress-bar" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="experience-item">
+          <div class="job-header">
+            <div>
+              <h3 class="job-title">Backend developer</h3>
+              <a class="job-company" href="https://www.facebook.com/hykerzegypt"
+                >Hykerz</a
+              >
+              <p class="job-location">Remote part-time, Egypt</p>
+            </div>
+            <div>
+              <p class="job-duration">Jul 2025 - Present</p>
+              <p class="job-duration">-</p>
+            </div>
+          </div>
+          <ul class="job-description">
+            <li>
+              Develop and maintain application in iOS and android (Flutter,
+              Firebase)
+            </li>
+          </ul>
+          <div class="job-stats">
+            <span><strong>Team Size:</strong> 3 developers</span>
+            <span><strong>Projects Delivered:</strong> 1</span>
+            <span><strong>Experience Level:</strong> Junior (100%)</span>
+          </div>
         </div>
 
-        <!-- Professional Summary -->
-        <div class="section">
-            <h2 class="section-title">Professional Summary</h2>
-            <p class="summary">
-                I currently working on Vconnect company as a backend developer to enhance some features. And I worked in many platforms as a full-stack volunteer developer. I created many projects as in my portfolio.
+        <div class="experience-item">
+          <div class="job-header">
+            <div>
+              <h3 class="job-title">Junior Backend developer</h3>
+              <a
+                class="job-company"
+                href="https://www.linkedin.com/company/vconnct/"
+                >Vconnect</a
+              >
+              <p class="job-location">6th October, Giza, Egypt</p>
+            </div>
+            <div>
+              <p class="job-duration">Jul 2025 - Sep 2025</p>
+              <p class="job-duration">3 months</p>
+            </div>
+          </div>
+          <ul class="job-description">
+            <li>Enhance payment services (FastAPI, PostgreSQL, Redis)</li>
+            <li>
+              Create livestream service in Vconnect tool (NodeJS, MongoDB,
+              LiveKit)
+            </li>
+          </ul>
+          <div class="job-stats">
+            <span><strong>Team Size:</strong> 12 developers</span>
+            <span><strong>Projects Delivered:</strong> 2</span>
+            <span><strong>Experience Level:</strong> Junior (95%)</span>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="job-header">
+            <div>
+              <h3 class="job-title">Full-stack developer</h3>
+              <a class="job-company" href="https://www.facebook.com/MMQ4u"
+                >MMQ4u</a
+              >
+              <p class="job-location">Remote, Saudia Arabia</p>
+            </div>
+            <div>
+              <p class="job-duration">Jul 2019 - Aug 2021</p>
+              <p class="job-duration">2.1 years</p>
+            </div>
+          </div>
+          <ul class="job-description">
+            <li>Built responsive web applications using HTML/CSS/ES</li>
+            <li>Access data from google drive</li>
+          </ul>
+          <div class="job-stats">
+            <span><strong>Team Size:</strong> 1 developer</span>
+            <span><strong>Projects Delivered:</strong> 1</span>
+            <span><strong>Experience Level:</strong> Junior (70%)</span>
+          </div>
+        </div>
+
+        <div class="experience-item">
+          <div class="job-header">
+            <div>
+              <h3 class="job-title">Junior Full-stack Developer</h3>
+              <a
+                class="job-company"
+                href="https://neushub.github.io/flutter-front-end/"
+                >NeusHub</a
+              >
+              <p class="job-location">Remote, Egypt</p>
+            </div>
+            <div>
+              <p class="job-duration">Feb 2025 - Feb 2025</p>
+              <p class="job-duration">1 month</p>
+            </div>
+          </div>
+          <ul class="job-description">
+            <li>Develop application using Flutter, NodeJS, and SQLite</li>
+            <li>Use actions and context inheritance classes in Flutter</li>
+            <li>Use of Express in NodeJS</li>
+          </ul>
+          <div class="job-stats">
+            <span
+              ><strong>Team Size:</strong> 1 developer, 1 UX/UI designer</span
+            >
+            <span><strong>Projects Delivered:</strong> 1</span>
+            <span><strong>Experience Level:</strong> Junior (80%)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+          <h3 class="education-degree">
+            Bachelor of PharmD general in Pharmacy
+          </h3>
+          <p class="education-school">University of Helwan, Helwan</p>
+          <p class="education-details">2020 - 2025 | GPA: 2.8/4.0</p>
+          <p class="education-details">
+            <strong>Relevant Coursework:</strong> Drug design using programming
+            languages and AI, Next generation Sequencing using programming
+            languages, Bioinformatics using programming languages
+          </p>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications">
+          <div class="certification-item">
+            • Backend developer in NASA space app challenge (2024)
+          </div>
+          <div class="certification-item">• IT lead in MMQ4u (2020)</div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="section">
+        <h2 class="section-title">Languages</h2>
+        <div class="languages">
+          <div class="language-item">
+            • <strong>English:</strong> Intermediate (60%)
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-item">
+            <div class="project-header">
+              <h3 class="project-name">NeusHub</h3>
+              <span class="project-status status-production">Production</span>
+            </div>
+            <p class="project-description">
+              Full-stack application for multiple OS using Flutter, NodeJS, and
+              SQLite to show new newsletters
             </p>
+            <p class="project-tech">
+              <strong>Technologies:</strong> Flutter, NodeJS, SQLite, RESTful
+              API, JWT
+            </p>
+            <div class="project-stats">
+              <span
+                ><strong>GitHub:</strong>
+                <a href="https://github.com/NeusHub"
+                  >github.com/NeusHub</a
+                ></span
+              >
+              <span
+                ><strong>Live Demo:</strong>
+                <a href="https://neushub.github.io/flutter-front-end/"
+                  >NeusHub</a
+                ></span
+              >
+              <span><strong>Users:</strong> -</span>
+              <span><strong>Duration:</strong> 1 month</span>
+              <span><strong>Completion:</strong> 100%</span>
+              <span><strong>User Satisfaction:</strong> 85%</span>
+              <span><strong>Performance Score:</strong> 92/100</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-header">
+              <h3 class="project-name">MMQ2u</h3>
+              <span class="project-status status-development">Development</span>
+            </div>
+            <p class="project-description">
+              Access data from google drive. Secondary degree convertor to show
+              available faculties in Egypt.
+            </p>
+            <p class="project-tech">
+              <strong>Technologies:</strong> HTML/CSS/ES, Django, SQLite,
+              Express
+            </p>
+            <div class="project-stats">
+              <span
+                ><strong>GitHub:</strong>
+                <a href="https://github.com/MMQ4u/Django">github/MMQ2u</a></span
+              >
+              <span><strong>Live Demo:</strong> -</span>
+              <span><strong>Users:</strong> -</span>
+              <span><strong>Duration:</strong> 2 months</span>
+              <span><strong>Completion:</strong> 70%</span>
+              <span><strong>User Satisfaction:</strong> -</span>
+              <span><strong>Performance Score:</strong> 98/100</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-header">
+              <h3 class="project-name">MMQ2u - beta</h3>
+              <span class="project-status status-production">Production</span>
+            </div>
+            <p class="project-description">
+              Beta version as static page from MMQ2u
+            </p>
+            <p class="project-tech">
+              <strong>Technologies:</strong> HTML/CSS/JS
+            </p>
+            <div class="project-stats">
+              <span
+                ><strong>GitHub:</strong>
+                <a href="https://github.com/MMQ4u/MMQ4u.github.io"
+                  >MMQ2u</a
+                ></span
+              >
+              <span><strong>Live Demo:</strong> -</span>
+              <span><strong>Users:</strong> +7k</span>
+              <span><strong>Duration:</strong> 3 months</span>
+              <span><strong>Completion:</strong> 100%</span>
+              <span><strong>User Satisfaction:</strong> 90%</span>
+              <span><strong>Performance Score:</strong> 98/100</span>
+            </div>
+          </div>
+
+          <div class="project-item">
+            <div class="project-header">
+              <h3 class="project-name">Moqtatafat</h3>
+              <span class="project-status status-development">Development</span>
+            </div>
+            <p class="project-description">
+              This is website for Islamic advices and encourage young people to
+              do somthing good
+            </p>
+            <p class="project-tech">
+              <strong>Technologies:</strong> HTML/CSS/JS, Django
+            </p>
+            <div class="project-stats">
+              <span
+                ><strong>GitHub:</strong>
+                <a href="https://github.com/Moqtatafat/django"
+                  >Moqtatafat</a
+                ></span
+              >
+              <span><strong>Live Demo:</strong> -</span>
+              <span><strong>Users:</strong> -</span>
+              <span><strong>Duration:</strong> 1 month</span>
+              <span><strong>Completion:</strong> 70%</span>
+              <span><strong>User Satisfaction:</strong> -</span>
+              <span><strong>Performance Score:</strong> 80/100</span>
+            </div>
+          </div>
         </div>
-
-        <!-- Interests -->
-        <div class="section">
-            <h2 class="section-title">Interests</h2>
-            <div class="interests">
-                <div class="interest-item">• Link between Programming and Pharmacy</div>
-                <div class="interest-item">• Use Vibe coding to develop applications</div>
-            </div>
-        </div>
-
-        <!-- Technical Skills -->
-        <div class="section">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                                 <div class="skill-category">
-                     <h4>Programming Languages</h4>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">Python</span>
-                             <span class="skill-level">95% (3+ years)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 95%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">TypeScript</span>
-                             <span class="skill-level">80% (1+ years)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 80%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">JavaScript</span>
-                             <span class="skill-level">80% (5+ years)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 80%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">Php</span>
-                             <span class="skill-level">50% (2+ years)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 50%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">Dart</span>
-                             <span class="skill-level">85% (1- year)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 85%"></div>
-                         </div>
-                     </div>
-                 </div>
-
-                                <div class="skill-category">
-                     <h4>Backend & APIs</h4>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">Node.js</span>
-                             <span class="skill-level">90% (1- year)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 90%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">Express</span>
-                             <span class="skill-level">80% (1- year)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 80%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">RESTful APIs</span>
-                             <span class="skill-level">95% (1- year)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 95%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">JWT</span>
-                             <span class="skill-level">95% (1- year)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 95%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">Django</span>
-                             <span class="skill-level">80% (1+ year)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 80%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">Firebase</span>
-                             <span class="skill-level">70% (1- year)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 70%"></div>
-                         </div>
-                     </div>
-                 </div>
-
-                                 <div class="skill-category">
-                     <h4>Frontend Technologies</h4>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">HTML5/CSS3/ES</span>
-                             <span class="skill-level">80% (2+ years)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 80%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">Flutter</span>
-                             <span class="skill-level">75% (1- year)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 75%"></div>
-                         </div>
-                     </div>
-                 </div>
-
-                                 <div class="skill-category">
-                     <h4>Databases</h4>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">PostgreSQL</span>
-                             <span class="skill-level">80% (3+ years)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 80%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">Redis</span>
-                             <span class="skill-level">40% (1- years)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 40%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">MySQL</span>
-                             <span class="skill-level">70% (2+ years)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 70%"></div>
-                         </div>
-                     </div>
-                 </div>
-
-                                 <div class="skill-category">
-                     <h4>Cloud & DevOps</h4>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">Docker</span>
-                             <span class="skill-level">80% (1- years)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 80%"></div>
-                         </div>
-                     </div>
-                     <div class="skill-item">
-                         <div class="skill-info">
-                             <span class="skill-name">CI/CD</span>
-                             <span class="skill-level">70% (1- years)</span>
-                         </div>
-                         <div class="skill-progress">
-                             <div class="skill-progress-bar" style="width: 70%"></div>
-                         </div>
-                     </div>
-                 </div>
-                                <div class="skill-category">
-                    <h4>Special technologies</h4>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">LiveKit</span>
-                            <span class="skill-level">75% (1- year)</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-progress-bar" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-name">PartyKit</span>
-                            <span class="skill-level">75% (1- year)</span>
-                        </div>
-                        <div class="skill-progress">
-                            <div class="skill-progress-bar" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Work Experience -->
-        <div class="section">
-            <h2 class="section-title">Work Experience</h2>
-            
-            <div class="experience-item">
-                <div class="job-header">
-                    <div>
-                        <h3 class="job-title">Backend developer</h3>
-                        <p class="job-company">Hykerz</p>
-                        <p class="job-location">Remote part-time, Egypt</p>
-                    </div>
-                    <div>
-                        <p class="job-duration">Jul 2025 - Sep 2025</p>
-                        <p class="job-duration">3 months</p>
-                    </div>
-                </div>
-                <ul class="job-description">
-                    <li>Develop and maintain application in iOS and android (Flutter, Firebase)</li>
-                </ul>
-                <div class="job-stats">
-                    <span><strong>Team Size:</strong> 3 developers</span>
-                    <span><strong>Projects Delivered:</strong> 1</span>
-                    <span><strong>Experience Level:</strong> Junior (100%)</span>
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="job-header">
-                    <div>
-                        <h3 class="job-title">Intern. Backend developer</h3>
-                        <p class="job-company">Vconnect</p>
-                        <p class="job-location">6th October, Giza, Egypt</p>
-                    </div>
-                    <div>
-                        <p class="job-duration">Jul 2025 - Sep 2025</p>
-                        <p class="job-duration">3 months</p>
-                    </div>
-                </div>
-                <ul class="job-description">
-                    <li>Enhance payment services (FastAPI, PostgreSQL, Redis)</li>
-                    <li>Create livestream service in Vconnect tool (NodeJS, MongoDB, LiveKit)</li>
-                </ul>
-                <div class="job-stats">
-                    <span><strong>Team Size:</strong> 12 developers</span>
-                    <span><strong>Projects Delivered:</strong> 2</span>
-                    <span><strong>Experience Level:</strong> Junior (95%)</span>
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="job-header">
-                    <div>
-                        <h3 class="job-title">Full-stack developer</h3>
-                        <p class="job-company">MMQ2u</p>
-                        <p class="job-location">Remote</p>
-                    </div>
-                    <div>
-                        <p class="job-duration">Jul 2019 - Aug 2021</p>
-                        <p class="job-duration">2.1 years</p>
-                    </div>
-                </div>
-                <ul class="job-description">
-                    <li>Built responsive web applications using HTML/CSS/ES</li>
-                    <li>Access data from google drive</li>
-                </ul>
-                <div class="job-stats">
-                    <span><strong>Team Size:</strong> 1 developer</span>
-                    <span><strong>Projects Delivered:</strong> 1</span>
-                    <span><strong>Experience Level:</strong> Junior (70%)</span>
-                </div>
-            </div>
-
-            <div class="experience-item">
-                <div class="job-header">
-                    <div>
-                        <h3 class="job-title">Junior Full-stack Developer</h3>
-                        <p class="job-company">NeusHub</p>
-                        <p class="job-location">Online platform</p>
-                    </div>
-                    <div>
-                        <p class="job-duration">Feb 2025 - Feb 2025</p>
-                        <p class="job-duration">1 month</p>
-                    </div>
-                </div>
-                <ul class="job-description">
-                    <li>Develop application using Flutter, NodeJS, and SQLite</li>
-                    <li>Use actions and context inheritance classes in Flutter</li>
-                    <li>Use of Express in NodeJS</li>
-                </ul>
-                <div class="job-stats">
-                    <span><strong>Team Size:</strong> 1 developer, 1 UX/UI designer</span>
-                    <span><strong>Projects Delivered:</strong> 1</span>
-                    <span><strong>Experience Level:</strong> Junior (80%)</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Education -->
-        <div class="section">
-            <h2 class="section-title">Education</h2>
-            <div class="education-item">
-                <h3 class="education-degree">Bachelor of PharmD general in Pharmacy</h3>
-                <p class="education-school">University of Helwan, Helwan</p>
-                <p class="education-details">2020 - 2025 | GPA: 2.8/4.0</p>
-                <p class="education-details"><strong>Relevant Coursework:</strong> Drug design using programming languages and AI, Next generation Sequencing using programming languages, Bioinformatics using programming languages</p>
-            </div>
-        </div>
-
-        <!-- Certifications -->
-        <div class="section">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications">
-                <div class="certification-item">• Backend developer in NASA space app challenge (2024)</div>
-                <div class="certification-item">• IT lead in MMQ2u (2020)</div>
-            </div>
-        </div>
-
-        <!-- Languages -->
-        <div class="section">
-            <h2 class="section-title">Languages</h2>
-            <div class="languages">
-                <div class="language-item">• <strong>English:</strong> Intermediate (60%)</div>
-            </div>
-        </div>
-
-        <!-- Projects -->
-        <div class="section">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3 class="project-name">NeusHub</h3>
-                        <span class="project-status status-production">Production</span>
-                    </div>
-                    <p class="project-description">Full-stack application for multiple OS using Flutter, NodeJS, and SQLite to show new newsletters</p>
-                    <p class="project-tech"><strong>Technologies:</strong> Flutter, NodeJS, SQLite, RESTful API, JWT</p>
-                    <div class="project-stats">
-                        <span><strong>GitHub:</strong> <a href="https://github.com/NeusHub">github.com/NeusHub</a></span>
-                        <span><strong>Live Demo:</strong> <a href="https://neushub.github.io/flutter-front-end/">NeusHub</a></span>
-                        <span><strong>Users:</strong> -</span>
-                        <span><strong>Duration:</strong> 1 month</span>
-                        <span><strong>Completion:</strong> 100%</span>
-                        <span><strong>User Satisfaction:</strong> 85%</span>
-                        <span><strong>Performance Score:</strong> 92/100</span>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3 class="project-name">MMQ2u</h3>
-                        <span class="project-status status-development">Development</span>
-                    </div>
-                    <p class="project-description">Access data from google drive. Secondary degree convertor to show available faculties in Egypt.</p>
-                    <p class="project-tech"><strong>Technologies:</strong> HTML/CSS/ES, Django, SQLite, Express</p>
-                    <div class="project-stats">
-                        <span><strong>GitHub:</strong> <a href="https://github.com/MMQ4u/Django">github/MMQ2u</a></span>
-                        <span><strong>Live Demo:</strong> -</span>
-                        <span><strong>Users:</strong> -</span>
-                        <span><strong>Duration:</strong> 2 months</span>
-                        <span><strong>Completion:</strong> 70%</span>
-                        <span><strong>User Satisfaction:</strong> -</span>
-                        <span><strong>Performance Score:</strong> 98/100</span>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3 class="project-name">MMQ2u - beta</h3>
-                        <span class="project-status status-production">Production</span>
-                    </div>
-                    <p class="project-description">Beta version as static page from MMQ2u</p>
-                    <p class="project-tech"><strong>Technologies:</strong> HTML/CSS/JS</p>
-                    <div class="project-stats">
-                        <span><strong>GitHub:</strong> <a href="https://github.com/MMQ4u/MMQ4u.github.io">MMQ2u</a></span>
-                        <span><strong>Live Demo:</strong> -</span>
-                        <span><strong>Users:</strong> +7k</span>
-                        <span><strong>Duration:</strong> 3 months</span>
-                        <span><strong>Completion:</strong> 100%</span>
-                        <span><strong>User Satisfaction:</strong> 90%</span>
-                        <span><strong>Performance Score:</strong> 98/100</span>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-header">
-                        <h3 class="project-name">Moqtatafat</h3>
-                        <span class="project-status status-development">Development</span>
-                    </div>
-                    <p class="project-description">This is website for Islamic advices and encourage young people to do somthing good</p>
-                    <p class="project-tech"><strong>Technologies:</strong> HTML/CSS/JS, Django</p>
-                    <div class="project-stats">
-                        <span><strong>GitHub:</strong> <a href="https://github.com/Moqtatafat/django">Moqtatafat</a></span>
-                        <span><strong>Live Demo:</strong> -</span>
-                        <span><strong>Users:</strong> -</span>
-                        <span><strong>Duration:</strong> 1 month</span>
-                        <span><strong>Completion:</strong> 70%</span>
-                        <span><strong>User Satisfaction:</strong> -</span>
-                        <span><strong>Performance Score:</strong> 80/100</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
