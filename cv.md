@@ -49,18 +49,18 @@ I currently work as a full-stack developer. I created many projects using cross 
 - **Flutter** - 90% (1- year)
 - **React** - 75% (1- year)
 
-### Backend & APIs
+### Backend Technologies
 
 - **Node.js** - 90% (1- year)
 - **Express** - 80% (1- year)
-- **RESTful APIs** - 95% (1- year)
-- **JWT** - 95% (1- year)
+- **NestJS** - 70% (1- year)
 - **Django** - 80% (1+ year)
 - **Firebase** - 70% (1- year)
 
 ### Databases
 
 - **PostgreSQL** - 80% (3+ years)
+- **MongoDB** - 40% (1- year)
 - **Redis** - 40% (1- year)
 - **MySQL** - 70% (2+ years)
 
