@@ -46,7 +46,8 @@ I currently work as a full-stack developer. I created many projects using cross 
 ### Frontend Technologies
 
 - **HTML5/CSS3/ES** - 80% (2+ years)
-- **Flutter** - 75% (1- year)
+- **Flutter** - 90% (1- year)
+- **React** - 75% (1- year)
 
 ### Backend & APIs
 
