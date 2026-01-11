@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Hassan Ali - Pharmacy Student CV</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+            font-size: 9pt;
+            line-height: 1.7;
+            color: #2d3748;
+            background: #f7fafc;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .cv-container {
+            max-width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: #ffffff;
+            display: flex;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+        
+        /* Left Sidebar */
+        .sidebar {
+            width: 32%;
+            background: linear-gradient(180deg, #1a365d 0%, #2c5282 100%);
+            color: #ffffff;
+            padding: 40px 28px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .sidebar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4299e1 0%, #63b3ed 50%, #90cdf4 100%);
+        }
+        
+        /* Right Main Content */
+        .main-content {
+            width: 68%;
+            padding: 40px 45px;
+            background: #ffffff;
+        }
+        
+        /* Header */
+        .header {
+            text-align: left;
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 4px solid #4299e1;
+            position: relative;
+        }
+        
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: #2c5282;
+        }
+        
+        .header h1 {
+            font-size: 28pt;
+            font-weight: 800;
+            color: #1a365d;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+            line-height: 1.1;
+        }
+        
+        .header .title {
+            font-size: 13pt;
+            color: #4299e1;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Photo Placeholder */
+        .photo-container {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 5px solid rgba(255,255,255,0.3);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3), inset 0 2px 4px rgba(255,255,255,0.2);
+            position: relative;
+        }
+        
+        .photo-container::after {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            padding: 3px;
+            background: linear-gradient(135deg, #4299e1, #63b3ed);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+        }
+        
+        .photo-placeholder {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #718096;
+            font-size: 8.5pt;
+            text-align: center;
+            padding: 15px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        
+        .photo-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        
+        /* Sidebar Header */
+        .sidebar-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #63b3ed;
+        }
+        
+        .sidebar-header h1 {
+            font-size: 20pt;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+        
+        .sidebar-header .title {
+            font-size: 11pt;
+            color: #90cdf4;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        /* Sidebar Sections */
+        .sidebar-section {
+            margin-bottom: 35px;
+        }
+        
+        .sidebar-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .sidebar-section h2 {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            position: relative;
+        }
+        
+        .sidebar-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #63b3ed;
+        }
+        
+        .contact-info {
+            font-size: 8.5pt;
+            line-height: 2;
+        }
+        
+        .contact-info p {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            padding-left: 8px;
+            position: relative;
+        }
+        
+        .contact-info p::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 4px;
+            height: 4px;
+            background: #63b3ed;
+            border-radius: 50%;
+        }
+        
+        .contact-info strong {
+            margin-right: 10px;
+            min-width: 75px;
+            font-weight: 600;
+            color: #cbd5e0;
+        }
+        
+        .contact-info span {
+            color: #ffffff;
+            word-break: break-word;
+        }
+        
+        .skills-group {
+            margin-bottom: 25px;
+        }
+        
+        .skills-group:last-child {
+            margin-bottom: 0;
+        }
+        
+        .skills-group h3 {
+            font-size: 9pt;
+            font-weight: 600;
+            color: #cbd5e0;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .skills-list {
+            list-style: none;
+            font-size: 8.5pt;
+            line-height: 1.9;
+        }
+        
+        .skills-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            color: #e2e8f0;
+        }
+        
+        .skills-list li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #63b3ed;
+            font-weight: bold;
+            font-size: 8.5pt;
+        }
+        
+        .languages-list {
+            list-style: none;
+            font-size: 8.5pt;
+            line-height: 2;
+        }
+        
+        .languages-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            color: #e2e8f0;
+        }
+        
+        .languages-list li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #63b3ed;
+            font-weight: bold;
+            font-size: 8.5pt;
+        }
+        
+        .languages-list strong {
+            color: #cbd5e0;
+            font-weight: 600;
+        }
+        
+        /* Main Content Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .section h2 {
+            font-size: 13pt;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #e2e8f0;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            position: relative;
+        }
+        
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #4299e1 0%, #63b3ed 100%);
+        }
+        
+        .section p {
+            margin-bottom: 0;
+            text-align: left;
+            font-size: 8.5pt;
+            line-height: 1.8;
+            color: #4a5568;
+        }
+        
+        .education-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f7fafc;
+            border-left: 4px solid #4299e1;
+            border-radius: 4px;
+            transition: transform 0.2s ease;
+        }
+        
+        .education-item h3 {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
+        .education-item .institution {
+            font-size: 9pt;
+            color: #2c5282;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        
+        .education-item .date {
+            font-size: 8.5pt;
+            color: #718096;
+            font-style: italic;
+            margin-bottom: 12px;
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e2e8f0;
+            border-radius: 12px;
+        }
+        
+        .coursework {
+            font-size: 8.5pt;
+            color: #4a5568;
+            margin-top: 12px;
+            line-height: 1.7;
+            padding-top: 12px;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .coursework strong {
+            color: #2c5282;
+            font-weight: 600;
+        }
+        
+        .training-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f7fafc;
+            border-left: 4px solid #4299e1;
+            border-radius: 4px;
+            transition: transform 0.2s ease;
+        }
+        
+        .training-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .training-item h3 {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
+        .training-item .company {
+            font-size: 9pt;
+            color: #2c5282;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        
+        .training-item .date {
+            font-size: 8.5pt;
+            color: #718096;
+            font-style: italic;
+            margin-bottom: 12px;
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e2e8f0;
+            border-radius: 12px;
+        }
+        
+        .training-item ul {
+            list-style: none;
+            margin-left: 0;
+            margin-top: 12px;
+        }
+        
+        .training-item ul li {
+            font-size: 8.5pt;
+            margin-bottom: 8px;
+            padding-left: 22px;
+            position: relative;
+            line-height: 1.7;
+            color: #4a5568;
+        }
+        
+        .training-item ul li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #4299e1;
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        
+        .cert-item {
+            margin-bottom: 22px;
+            padding: 18px;
+            background: #f7fafc;
+            border-left: 4px solid #4299e1;
+            border-radius: 4px;
+        }
+        
+        .cert-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .cert-item h3 {
+            font-size: 10pt;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
+        .cert-item .provider {
+            font-size: 9pt;
+            color: #2c5282;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        
+        .cert-item .date {
+            font-size: 8.5pt;
+            color: #718096;
+            font-style: italic;
+            margin-bottom: 10px;
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e2e8f0;
+            border-radius: 12px;
+        }
+        
+        .cert-item ul {
+            list-style: none;
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        
+        .cert-item ul li {
+            font-size: 8.5pt;
+            margin-bottom: 6px;
+            padding-left: 22px;
+            position: relative;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+        
+        .cert-item ul li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #4299e1;
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        
+        .project-item {
+            margin-bottom: 22px;
+            padding: 18px;
+            background: #f7fafc;
+            border-left: 4px solid #4299e1;
+            border-radius: 4px;
+        }
+        
+        .project-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .project-item h3 {
+            font-size: 10pt;
+            font-weight: 700;
+            color: #1a365d;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+        
+        .project-item .date {
+            font-size: 8.5pt;
+            color: #718096;
+            font-style: italic;
+            margin-bottom: 10px;
+            display: inline-block;
+            padding: 4px 12px;
+            background: #e2e8f0;
+            border-radius: 12px;
+        }
+        
+        .project-item ul {
+            list-style: none;
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        
+        .project-item ul li {
+            font-size: 8.5pt;
+            margin-bottom: 6px;
+            padding-left: 22px;
+            position: relative;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+        
+        .project-item ul li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #4299e1;
+            font-weight: bold;
+            font-size: 11pt;
+        }
+        
+        .footer {
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+            text-align: center;
+            font-size: 8.5pt;
+            color: #718096;
+        }
+        
+        .footer strong {
+            color: #2c5282;
+            font-weight: 600;
+        }
+        
+        /* Print Styles */
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            
+            html {
+                background: linear-gradient(to right, #1a365d 0%, #1a365d 32%, white 32%, white 100%) !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            
+            body {
+                background: transparent;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .cv-container {
+                box-shadow: none;
+                max-width: 100%;
+                margin: 0;
+                page-break-after: avoid;
+                display: flex;
+                background: transparent;
+            }
+            
+            .sidebar {
+                background: transparent !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+                width: 32%;
+                float: left;
+            }
+            
+            .main-content {
+                width: 68%;
+                float: right;
+                background: white;
+            }
+            
+            .section, .education-item, .training-item, .cert-item, .project-item {
+                page-break-inside: avoid;
+            }
+            
+            /* Add padding to main content sections when they start on a new page */
+            .main-content {
+                padding-top: 40px;
+            }
+            
+            /* Add padding to sections that may start on a new page */
+            .main-content .section {
+                padding-top: 30px;
+                orphans: 3;
+                widows: 3;
+            }
+            
+            /* Remove padding from first section on first page */
+            .main-content > .section:first-child {
+                padding-top: 0;
+            }
+            
+            /* Ensure section headings don't break awkwardly */
+            .main-content .section h2 {
+                page-break-after: avoid;
+                break-after: avoid;
+                margin-top: 0;
+            }
+            
+            /* Force Training & Internships section to start on new page */
+            .main-content > .section:nth-of-type(4) {
+                page-break-before: always;
+                break-before: page;
+            }
+            
+            /* Ensure images print */
+            img {
+                max-width: 100% !important;
+                height: auto !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                display: block !important;
+                color-adjust: exact !important;
+            }
+            
+            .photo-img {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+                position: relative !important;
+                z-index: 10 !important;
+            }
+            
+            .photo-container {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+                display: flex !important;
+                visibility: visible !important;
+                position: relative !important;
+                overflow: visible !important;
+            }
+            
+            .photo-container img {
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                filter: none !important;
+            }
+            
+            .photo-placeholder {
+                display: none !important;
+            }
+            
+            /* Slightly increased spacing between sections in printed PDF */
+            .main-content { padding-top: 16px !important; }
+            .main-content .section { margin-bottom: 10pt !important; padding-top: 10pt !important; }
+            .section h2 { margin-bottom: 16px !important; padding-bottom: 8px !important; }
+            .section p { margin-bottom: 8px !important; }
+            .education-item, .training-item, .cert-item, .project-item { margin-bottom: 10pt !important; padding: 14px !important; }
+            .footer { margin-top: 14px !important; padding-top: 10px !important; }
+
+            /* Print: put Technical Skills (.skills-group:nth-of-type(2)) on its own page
+               and add top padding so the blue column shows a margin on that page */
+            .sidebar-section .skills-group:nth-of-type(2) {
+                page-break-before: always !important;
+                break-before: page !important;
+                padding-top: 7mm !important;
+                box-sizing: border-box !important;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <!-- Photo -->
+            <div class="photo-container">
+                <img src="JO.jpg" alt="Youssef Hassan Ali" class="photo-img" id="cv-photo">
+            </div>
+            
+            <!-- Name and Title -->
+            <div class="sidebar-header">
+                <h1>YOUSSEF<br>HASSAN ALI</h1>
+                <div class="title">Pharmacy Intern</div>
+            </div>
+            
+            <!-- Contact Information -->
+            <section class="sidebar-section">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <p><strong>Phone:</strong> <span>+20 155 672 5510</span></p>
+                    <p><strong>Email:</strong> <span>youssef.hassan.0202@gmail.com</span></p>
+                    <p><strong>Address:</strong> <span>54 Hadyeek Elzytoon, Cairo, Egypt</span></p>
+                </div>
+            </section>
+            
+            <!-- Skills -->
+            <section class="sidebar-section">
+                <h2>Skills</h2>
+                
+                <div class="skills-group">
+                    <h3>Clinical Skills</h3>
+                    <ul class="skills-list">
+                        <li>Prescription review and verification</li>
+                        <li>Drug interaction analysis</li>
+                        <li>Dosage calculations and medication counseling</li>
+                        <li>Pharmaceutical quality control and quality assurance</li>
+                        <li>Drug design and computational biology applications</li>
+                        <li>Pharmaceutical Total Quality Management (TQM)</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-group">
+                    <h3>Technical Skills</h3>
+                    <ul class="skills-list">
+                        <li>Pharmaceutical software: PyMOL, Chimera, KNIME</li>
+                        <li>Bioinformatics tools and applications</li>
+                        <li>MS Office Suite (Word, Excel, PowerPoint)</li>
+                        <li>Data analysis and interpretation</li>
+                        <li>Programming fundamentals</li>
+                        <li>Pharmaceutical database management</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-group">
+                    <h3>Soft Skills</h3>
+                    <ul class="skills-list">
+                        <li>Excellent communication and interpersonal skills</li>
+                        <li>Customer interaction and relationship building</li>
+                        <li>Medical sales and presentation abilities</li>
+                        <li>Research and analytical thinking</li>
+                        <li>Team leadership and collaboration</li>
+                        <li>Time management and attention to detail</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Languages -->
+            <section class="sidebar-section">
+                <h2>Languages</h2>
+                <ul class="languages-list">
+                    <li><strong>Arabic:</strong> Native proficiency</li>
+                    <li><strong>English:</strong> Intermediate proficiency</li>
+                </ul>
+            </section>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Professional Summary -->
+            <section class="section">
+                <h2>Professional Summary</h2>
+                <p>Dedicated PharmD student currently in the internship year at Helwan University with a strong academic foundation in pharmaceutical sciences and extensive practical training in pharmaceutical industry, quality management, and medical representation. Currently working at Dr.Edward Pharmacy, gaining hands-on experience in prescription dispensing, patient counseling, and pharmacy operations. Demonstrated expertise in drug design, computational biology, and pharmaceutical quality assurance through specialized training programs. Possesses excellent communication skills, attention to detail, and a commitment to patient safety. Seeking opportunities to apply clinical knowledge and pharmaceutical expertise in hospital, community pharmacy, or pharmaceutical industry settings.</p>
+            </section>
+            
+            <!-- Education -->
+            <section class="section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Pharmacy (PharmD)</h3>
+                    <div class="institution">Faculty of Pharmacy, Helwan University | Cairo, Egypt</div>
+                    <div class="date">2020 - Present | Expected Graduation: 2026</div>
+                    <div class="coursework"><strong>Relevant Coursework:</strong> Clinical Pharmacy, Pharmacology, Pharmaceutical Chemistry, Pharmacokinetics, Pharmaceutical Quality Control, Quality Assurance, Drug Design, Pharmaceutical Industry, Pharmaceutical Technology, Medicinal Chemistry, Pharmacotherapy, Pharmacy Practice</div>
+                </div>
+            </section>
+            
+            <!-- Work Experience -->
+            <section class="section">
+                <h2>Work Experience</h2>
+                
+                <div class="training-item">
+                    <h3>Pharmacy Assistant</h3>
+                    <div class="company">Dr.Edward Pharmacy</div>
+                    <div class="date">November 2024 - Present</div>
+                    <ul>
+                        <li>Assist in prescription dispensing and medication preparation under pharmacist supervision</li>
+                        <li>Provide patient counseling on medication usage, dosage, and potential side effects</li>
+                        <li>Perform prescription review and verify drug interactions and contraindications</li>
+                        <li>Manage pharmacy inventory and maintain proper storage conditions for medications</li>
+                        <li>Handle customer inquiries and provide professional pharmaceutical advice</li>
+                        <li>Ensure compliance with pharmacy regulations and quality standards</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Research & Academic Projects -->
+            <section class="section">
+                <h2>Research & Academic Projects</h2>
+                
+                <div class="project-item">
+                    <h3>Computational Drug Design Project</h3>
+                    <div class="date">2022</div>
+                    <ul>
+                        <li>Utilized PyMOL and Chimera for molecular modeling and visualization</li>
+                        <li>Applied KNIME for data analysis in drug design workflows</li>
+                        <!-- <li>Developed skills in computational approaches to pharmaceutical research</li> -->
+                    </ul>
+                </div>
+                
+                <div class="project-item">
+                    <h3>Bioinformatics Applications in Pharmacy</h3>
+                    <div class="date">2022</div>
+                    <ul>
+                        <li>Explored bioinformatics tools for pharmaceutical research</li>
+                        <li>Analyzed biological data relevant to drug discovery and development</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Training & Internships -->
+            <section class="section">
+                <h2>Training & Internships</h2>
+                
+                <div class="training-item">
+                    <h3>Trainee Medical Representative</h3>
+                    <div class="company">Hi Pharm</div>
+                    <div class="date">August 2022 | 90 hours</div>
+                    <ul>
+                        <li>Conducted field visits to healthcare facilities and pharmacies</li>
+                        <li>Delivered product presentations to healthcare professionals</li>
+                        <li>Developed strong customer interaction and medical sales skills</li>
+                        <li>Gained comprehensive understanding of pharmaceutical market dynamics</li>
+                    </ul>
+                </div>
+                
+                <div class="training-item">
+                    <h3>Pharmaceutical Industry Training</h3>
+                    <div class="company">Memphis Pharma</div>
+                    <div class="date">September 2021 | 10 hours</div>
+                    <ul>
+                        <li>Observed practical applications of pharmaceutical manufacturing processes</li>
+                        <li>Learned about Good Manufacturing Practices (GMP) and quality standards</li>
+                        <li>Gained hands-on experience in pharmaceutical production workflows</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Certifications & Courses -->
+            <section class="section">
+                <h2>Certifications & Courses</h2>
+                
+                <div class="cert-item">
+                    <h3>Pharmaceutical Total Quality Management (TQM)</h3>
+                    <div class="provider">Zewail City of Science and Technology</div>
+                    <div class="date">September 2021 | 30 hours</div>
+                    <ul>
+                        <li>Total Quality Management principles and applications in pharmaceutical industry</li>
+                        <li>Quality assurance protocols and regulatory compliance</li>
+                    </ul>
+                </div>
+                
+                <div class="cert-item">
+                    <h3>Drug Design and Analysis</h3>
+                    <div class="provider">Zewail City of Science and Technology</div>
+                    <div class="date">August 2022 | 18 hours</div>
+                    <ul>
+                        <li>Practical training in PyMOL, Chimera, and KNIME for drug design</li>
+                        <li>Data analysis techniques for pharmaceutical research</li>
+                    </ul>
+                </div>
+                
+                <div class="cert-item">
+                    <h3>Bioinformatics</h3>
+                    <div class="provider">Global for Science and Knowledge</div>
+                    <div class="date">August 2022 | 30 hours (Blended Learning)</div>
+                    <ul>
+                        <li>Practical applications of bioinformatics in pharmaceutical sciences</li>
+                        <li>Computational approaches to drug discovery</li>
+                    </ul>
+                </div>
+                
+                <div class="cert-item">
+                    <h3>Nano Drug Delivery</h3>
+                    <div class="provider">Nawah</div>
+                    <div class="date">April 2025 | 16 hours</div>
+                    <ul>
+                        <li>Formulation techniques for nanocarriers</li>
+                        <li>Optimization strategies for nano drug delivery systems</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Footer -->
+            <!-- <footer class="footer">
+                <p><strong>References:</strong> Available upon request</p>
+            </footer> -->
+        </main>
+    </div>
+    <script>
+        // Ensure image loads before printing
+        (function() {
+            const img = document.getElementById('cv-photo');
+            if (!img) return;
+            
+            // Try multiple paths
+            const paths = ['JO.jpg', './JO.jpg', 'Pharmacy - CV/JO.jpg'];
+            let currentPathIndex = 0;
+            
+            function tryLoadImage() {
+                if (currentPathIndex < paths.length) {
+                    img.src = paths[currentPathIndex];
+                    currentPathIndex++;
+                }
+            }
+            
+            img.onload = function() {
+                console.log('Image loaded successfully from:', img.src);
+                img.style.display = 'block';
+                img.style.visibility = 'visible';
+                img.style.opacity = '1';
+            };
+            
+            img.onerror = function() {
+                console.log('Trying alternative path...');
+                tryLoadImage();
+            };
+            
+            // Force image display before print
+            window.addEventListener('beforeprint', function() {
+                if (img.complete && img.naturalHeight !== 0) {
+                    img.style.display = 'block';
+                    img.style.visibility = 'visible';
+                    img.style.opacity = '1';
+                } else {
+                    // If image hasn't loaded, try to reload it
+                    const originalSrc = img.src;
+                    img.src = '';
+                    setTimeout(function() {
+                        img.src = originalSrc;
+                    }, 100);
+                }
+            });
+            
+            // Initial load
+            tryLoadImage();
+        })();
+    </script>
+</body>
+</html>
